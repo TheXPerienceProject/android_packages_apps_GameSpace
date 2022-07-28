@@ -15,7 +15,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="settings_title">游戏空间</string>
     <string name="settings_summary">管理您的游戏设置</string>
     <string name="app_selector_label">选择游戏</string>

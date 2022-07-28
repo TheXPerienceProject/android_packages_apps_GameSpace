@@ -15,7 +15,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="settings_title">Espacio de juego</string>
     <string name="settings_summary">Administra tu configuración de juegos</string>
     <string name="app_selector_label">Elige tu juego</string>
@@ -58,4 +58,6 @@
     <string name="gamespace_menu_opacity_title">Nivel de opacidad del menú de superposición</string>
     <string name="adb_disabled_summary">Deshabilita temporalmente la depuración USB ADB durante el juego</string>
     <string name="adb_disabled_title">Deshabilitar depuración USB</string>
+    <string name="battery_format">Batería: <xliff:g id="Percentage">%1$d</xliff:g>%%</string>
+    <string name="memory_format">Memoria disponible: <xliff:g id="availmemory" example="1000">%1$d</xliff:g>\/<xliff:g id="totalmemory" example="5000">%2$d</xliff:g> MB</string>
 </resources>
