@@ -58,4 +58,6 @@
     <string name="gamespace_menu_opacity_title">Tingkat opasitas hamparan menu</string>
     <string name="adb_disabled_summary">Nonaktifkan sementara USB ADB debugging saat dalam game</string>
     <string name="adb_disabled_title">Nonaktifkan USB debugging</string>
+    <string name="battery_format">Baterai: <xliff:g id="percentage" example="100">%1$d%%</xliff:g></string>
+    <string name="memory_format">Memori: <xliff:g id="availmemory" example="1000">%1$d</xliff:g>\/<xliff:g id="totalmemory" example="5000">%2$d</xliff:g> MB</string>
 </resources>
