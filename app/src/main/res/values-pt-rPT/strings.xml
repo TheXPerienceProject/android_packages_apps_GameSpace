@@ -56,4 +56,7 @@
     <string name="gamespace_menu_opacity_title">Nível de opacidade do menu sobreposto</string>
     <string name="adb_disabled_summary">Desativar temporariamente a depuração USB ADB durante o jogo</string>
     <string name="adb_disabled_title">Desativar depuração USB</string>
+    <!-- Tiles -->
+    <string name="game_mode_title">Modo</string>
+    <string name="fps_Info_title">Informação de FPS</string>
 </resources>
