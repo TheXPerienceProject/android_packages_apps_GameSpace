@@ -59,6 +59,4 @@
     <string name="adb_disabled_summary">游戏中暂时禁用 USB ADB 调试</string>
     <string name="adb_disabled_title">关闭 USB 调试</string>
     <!-- Tiles -->
-    <string name="game_mode_title">模式</string>
-    <string name="fps_Info_title">FPS 信息</string>
 </resources>

@@ -58,6 +58,4 @@
     <string name="adb_disabled_summary">Desativar temporariamente a depuração de ADB USB durante o jogo</string>
     <string name="adb_disabled_title">Desativar depuração USB</string>
     <!-- Tiles -->
-    <string name="game_mode_title">Modo</string>
-    <string name="fps_Info_title">Informações de FPS</string>
 </resources>
