@@ -47,6 +47,7 @@
     <string name="ringer_mode_silent">Senyap</string>
     <string name="ringer_mode_vibrate">Getar</string>
     <string name="ringer_mode_normal">Normal</string>
+    <string name="ringer_mode_no_change">Jangan diubah</string>
     <string name="suppress_fullscreen_intent_title">Blokir acara layar penuh</string>
     <string name="suppress_fullscreen_intent_summary">Cegah acara layar penuh seperti panggilan masuk muncul saat dalam game</string>
     <string name="per_app_title">Konfigurasi game</string>
@@ -59,6 +60,10 @@
     <string name="adb_disabled_summary">Nonaktifkan sementara USB ADB debugging saat dalam game</string>
     <string name="adb_disabled_title">Nonaktifkan USB debugging</string>
     <string name="battery_format">Baterai: <xliff:g id="percentage" example="100">%1$d%%</xliff:g></string>
-    <string name="memory_format">Memori: <xliff:g id="availmemory" example="1000">%1$d</xliff:g>\/<xliff:g id="totalmemory" example="5000">%2$d</xliff:g> MB</string>
+    <string name="memory_format">Memori tersedia: <xliff:g id="availmemory" example="1000">%1$d</xliff:g>\/<xliff:g id="totalmemory" example="5000">%2$d</xliff:g> MB</string>
     <!-- Tiles -->
+    <string name="notification_hide">Sembunyikan</string>
+    <string name="notification_headsup">Notifikasi Mengambang</string>
+    <string name="notification_reticker">reTicker</string>
+    <string name="notification_danmaku">Danmaku</string>
 </resources>
