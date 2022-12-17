@@ -66,4 +66,8 @@
     <string name="notification_headsup">Notificaciones emergentes</string>
     <string name="notification_reticker">reTicker</string>
     <string name="notification_danmaku">Danmaku</string>
+    <!-- Notification Mode -->
+    <string name="notification_mode_title">Modo de notificación</string>
+    <string name="notification_mode_hide">No mostrar</string>
+    <string name="notification_mode_reticker">Mostrar como reTicker</string>
 </resources>

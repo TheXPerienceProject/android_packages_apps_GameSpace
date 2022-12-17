@@ -66,4 +66,5 @@
     <string name="notification_headsup">Notifikasi Mengambang</string>
     <string name="notification_reticker">reTicker</string>
     <string name="notification_danmaku">Danmaku</string>
+    <!-- Notification Mode -->
 </resources>
