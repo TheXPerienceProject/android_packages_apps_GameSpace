@@ -26,8 +26,6 @@ import androidx.core.view.doOnLayout
 import io.chaldeaprjkt.gamespace.R
 import io.chaldeaprjkt.gamespace.utils.dp
 import io.chaldeaprjkt.gamespace.utils.isPortrait
-import kotlin.math.max
-import kotlin.math.min
 
 class PanelView @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null
@@ -66,5 +64,4 @@ class PanelView @JvmOverloads constructor(
 
         }
     }
-
 }
