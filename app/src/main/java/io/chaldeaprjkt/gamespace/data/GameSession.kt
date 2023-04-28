@@ -58,7 +58,6 @@ class GameSession @Inject constructor(
             packageName = sessionName,
             autoBrightness = systemSettings.autoBrightness,
             headsUp = systemSettings.headsUp,
-            reTicker = systemSettings.reTicker,
             threeScreenshot = systemSettings.threeScreenshot,
             ringerMode = audioManager.ringerModeInternal,
             adbEnabled = systemSettings.adbEnabled,
@@ -78,11 +77,6 @@ class GameSession @Inject constructor(
         if (appSettings.ringerMode != 3) {
             audioManager.ringerModeInternal = appSettings.ringerMode
         }
-        if (appSettings.notificationMode == 0) {
-            systemSettings.reTicker = false
-        } else {
-            systemSettings.reTicker = true
-        }
     }
 
     fun unregister() {
@@ -99,7 +93,6 @@ class GameSession @Inject constructor(
         if (appSettings.noAdbEnabled) {
             orig.adbEnabled?.let { systemSettings.adbEnabled = it }
         }
-        orig.reTicker?.let { systemSettings.reTicker = it }
         if (appSettings.ringerMode != 3) {
             audioManager.ringerModeInternal = orig.ringerMode
         }
