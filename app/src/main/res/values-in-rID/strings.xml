@@ -67,4 +67,7 @@
     <string name="notification_reticker">reTicker</string>
     <string name="notification_danmaku">Danmaku</string>
     <!-- Notification Mode -->
+    <string name="notification_mode_title">Mode notifikasi</string>
+    <string name="notification_mode_hide">Jangan tampilkan</string>
+    <string name="notification_mode_reticker">Muncul sebagai reTicker</string>
 </resources>
