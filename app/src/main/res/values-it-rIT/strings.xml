@@ -16,7 +16,58 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="settings_title">Spazio di gioco</string>
+    <string name="settings_summary">Gestisci la tua configurazione di gioco</string>
+    <string name="app_selector_label">Scegli il tuo gioco</string>
+    <string name="auto_brightness_disabled_title">Disabilità la luminosità automatica</string>
+    <string name="auto_brightness_disabled_summary">Mantieni la luminosità fissa mentre sei in gioco</string>
+    <string name="heads_up_disabled_title">Disabilita le notifiche fluttuanti</string>
+    <string name="heads_up_disabled_summary">Togli le notifiche popup mentre sei in gioco</string>
+    <string name="in_game_preferences_title">Opzioni di gioco</string>
+    <string name="game_list_title">Libreria</string>
+    <string name="game_remove_message">Sei sicuro di voler togliere %1$s dalla tua libreria?</string>
+    <string name="app_search_title">Cerca</string>
+    <string name="three_screenshot_disabled_summary">Disabilita temporaneamente la gesture di screenshot a tre dita mentre giochi</string>
+    <string name="three_screenshot_disabled_title">Disabilita lo scorrimento per fare uno screenshot</string>
+    <string name="state_enabled">abilitato</string>
+    <string name="state_disabled">disabilitato</string>
     <!-- Game Mode -->
+    <string name="game_mode_title">Modalità</string>
+    <string name="game_mode_unsupported">Non supportato</string>
+    <string name="game_mode_standard">Standard</string>
+    <string name="game_mode_performance">Prestazioni</string>
+    <string name="game_mode_battery">Batteria</string>
+    <string name="heads_up_title">Notifiche a comparsa</string>
+    <string name="fps_Info_title">Info FPS</string>
+    <string name="stay_awake_title">Rimani attivo</string>
+    <string name="stay_awake_summary">Mantieni lo schermo acceso mentre sei in gioco</string>
+    <string name="lock_gesture_title">Gesture di blocco</string>
+    <string name="lock_gesture_summary">Disabilita i gesti di navigazione (scorrimento per andare alla home e per tornare indietro) mentre giochi</string>
+    <string name="ringer_mode_title">Modalità suoneria</string>
+    <string name="ringer_mode_silent">Silenzioso</string>
+    <string name="ringer_mode_vibrate">Vibrazione</string>
+    <string name="ringer_mode_normal">Normale</string>
+    <string name="ringer_mode_no_change">Non cambiare</string>
+    <string name="suppress_fullscreen_intent_title">Blocca evento a schermo intero</string>
+    <string name="suppress_fullscreen_intent_summary">Blocca la comparsa di eventi a schermo intero, come popup di chiamata, mentre sei in gioco</string>
+    <string name="per_app_title">Configura il gioco</string>
+    <string name="per_app_mode_title">Modalità preferita</string>
+    <string name="per_app_angle_title">Utilizza ANGLE (sperimentale)</string>
+    <string name="per_app_angle_summary">Utilizzare il renderer ANGLE invece dei driver nativi GLES, se il dispositivo lo supporta.\nATTENZIONE!! Potrebbe creare problemi alla grafica del gioco, usare con attenzione!</string>
+    <string name="cant_find_angle_pkg">ANGLE non è disponibile sul tuo sistema</string>
+    <string name="per_app_unregister">Rimuovi %1$s dalla libreria</string>
+    <string name="gamespace_menu_opacity_title">Livello opacità del menu in sovrapposizione</string>
+    <string name="adb_disabled_summary">Disabilita temporaneamente il debug ADB via USB mentre giochi</string>
+    <string name="adb_disabled_title">Disabilita il debug USB</string>
+    <string name="battery_format">Batteria: <xliff:g id="percentage" example="100">%1$d%%</xliff:g></string>
+    <string name="memory_format">Memoria disponibile: <xliff:g id="availmemory" example="1000">%1$d</xliff:g>\/<xliff:g id="totalmemory" example="5000">%2$d</xliff:g> MB</string>
     <!-- Tiles -->
+    <string name="notification_hide">Nascondi</string>
+    <string name="notification_headsup">Notifiche a comparsa</string>
+    <string name="notification_reticker">reTicker</string>
+    <string name="notification_danmaku">Danmaku</string>
     <!-- Notification Mode -->
+    <string name="notification_mode_title">Modalità di notifica</string>
+    <string name="notification_mode_hide">Non mostrare</string>
+    <string name="notification_mode_reticker">Mostra come reTicker</string>
 </resources>
