@@ -70,4 +70,12 @@
     <string name="notification_mode_title">Modo de notificación</string>
     <string name="notification_mode_hide">No mostrar</string>
     <string name="notification_mode_reticker">Mostrar como reTicker</string>
+    <string name="state_enabled">Activo</string>
+    <string name="state_disabled">Desactivado</string>
+    <string name="in_game_calls_title">Modo de llamada</string>
+    <string name="in_game_calls_no_action">Ninguna acción</string>
+    <string name="in_game_calls_auto_answer">Contestar automáticamente</string>
+    <string name="in_game_calls_auto_reject">Rechazo automático</string>
+    <string name="in_game_calls_received_number">Llamada recibida de %1$s</string>
+    <string name="in_game_calls_rejected_number">Llamada rechazada de %1$s</string>
 </resources>
