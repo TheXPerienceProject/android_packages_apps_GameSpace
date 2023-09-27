@@ -29,8 +29,6 @@
     <string name="app_search_title">Szukaj</string>
     <string name="three_screenshot_disabled_summary">Tymczasowe wyłączenie gestu zrzutu ekranu trzema palcami podczas gry</string>
     <string name="three_screenshot_disabled_title">Wyłączenie funkcji przeciągnięcia trzema palcami w celu wykonania zrzutu ekranu</string>
-    <string name="state_enabled">włączone</string>
-    <string name="state_disabled">wyłączone</string>
     <!-- Game Mode -->
     <string name="game_mode_title">Tryb</string>
     <string name="game_mode_unsupported">Nieobsługiwany</string>
@@ -70,4 +68,12 @@
     <string name="notification_mode_title">Tryb powiadomienia</string>
     <string name="notification_mode_hide">Nie pokazuj</string>
     <string name="notification_mode_reticker">Pokaż jako reTicker</string>
+    <string name="state_enabled">Włączone</string>
+    <string name="state_disabled">Wyłączone</string>
+    <string name="in_game_calls_title">Tryb połączenia</string>
+    <string name="in_game_calls_no_action">Brak czynności</string>
+    <string name="in_game_calls_auto_answer">Automatyczne odbieranie połączeń</string>
+    <string name="in_game_calls_auto_reject">Automatyczne odrzucanie</string>
+    <string name="in_game_calls_received_number">Odebrano połączenie od %1$s</string>
+    <string name="in_game_calls_rejected_number">Odrzucono połączenie od %1$s</string>
 </resources>

@@ -29,8 +29,6 @@
     <string name="app_search_title">Cerca</string>
     <string name="three_screenshot_disabled_summary">Disabilita temporaneamente la gesture di screenshot a tre dita mentre giochi</string>
     <string name="three_screenshot_disabled_title">Disabilita lo scorrimento per fare uno screenshot</string>
-    <string name="state_enabled">abilitato</string>
-    <string name="state_disabled">disabilitato</string>
     <!-- Game Mode -->
     <string name="game_mode_title">Modalità</string>
     <string name="game_mode_unsupported">Non supportato</string>

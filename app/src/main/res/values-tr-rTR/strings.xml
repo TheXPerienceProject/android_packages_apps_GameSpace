@@ -29,8 +29,6 @@
     <string name="app_search_title">Ara</string>
     <string name="three_screenshot_disabled_summary">Oyundayken üç parmakla kaydırarak ekran görüntüsü alma hareketini geçici olarak devre dışı bırak</string>
     <string name="three_screenshot_disabled_title">Üç parmak hareketini devre dışı bırak</string>
-    <string name="state_enabled">etkin</string>
-    <string name="state_disabled">devre dışı</string>
     <!-- Game Mode -->
     <string name="game_mode_title">Mod</string>
     <string name="game_mode_unsupported">Desteklenmiyor</string>

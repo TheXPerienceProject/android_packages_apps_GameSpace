@@ -28,8 +28,6 @@
     <string name="app_search_title">Pesquisar</string>
     <string name="three_screenshot_disabled_summary">Desativar temporariamente o gesto de deslizar três dedos para capturar ecrã enquanto estiver a jogar</string>
     <string name="three_screenshot_disabled_title">Desativar deslizar para capturar ecrã</string>
-    <string name="state_enabled">ativo</string>
-    <string name="state_disabled">desactivado</string>
     <!-- Game Mode -->
     <string name="game_mode_title">Modo</string>
     <string name="game_mode_unsupported">Não Suportado</string>

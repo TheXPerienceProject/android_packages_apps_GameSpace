@@ -29,8 +29,6 @@
     <string name="app_search_title">Recherche</string>
     <string name="three_screenshot_disabled_summary">Désactiver temporairement le geste de capture d\'écran à trois doigts pendant le jeu</string>
     <string name="three_screenshot_disabled_title">Désactiver le balayage pour prendre une capture d\'écran</string>
-    <string name="state_enabled">activé</string>
-    <string name="state_disabled">désactivé</string>
     <!-- Game Mode -->
     <string name="game_mode_title">Mode</string>
     <string name="game_mode_unsupported">Non supporté</string>

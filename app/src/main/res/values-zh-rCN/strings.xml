@@ -29,8 +29,6 @@
     <string name="app_search_title">搜索</string>
     <string name="three_screenshot_disabled_summary">游戏中暂时禁用滑动截屏</string>
     <string name="three_screenshot_disabled_title">禁用滑动截屏</string>
-    <string name="state_enabled">已启用</string>
-    <string name="state_disabled">已停用</string>
     <!-- Game Mode -->
     <string name="game_mode_title">模式</string>
     <string name="game_mode_unsupported">暂不支持</string>

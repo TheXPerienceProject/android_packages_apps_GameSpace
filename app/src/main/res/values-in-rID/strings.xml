@@ -29,8 +29,6 @@
     <string name="app_search_title">Cari</string>
     <string name="three_screenshot_disabled_summary">Nonaktifkan sementara gestur tangkapan layar gesek tiga jari saat dalam game</string>
     <string name="three_screenshot_disabled_title">Nonaktifkan gesek ke tangkapan layar</string>
-    <string name="state_enabled">diaktifkan</string>
-    <string name="state_disabled">dinonaktifkan</string>
     <!-- Game Mode -->
     <string name="game_mode_title">Mode</string>
     <string name="game_mode_unsupported">Tidak didukung</string>
