@@ -128,6 +128,9 @@ class GameBarService : Hilt_GameBarService() {
             }
         }
 
+    // Whether to ignore the initActions (floating action) or not
+    private var shouldClose = false
+
     override fun onCreate() {
         super.onCreate()
         val frame = FrameLayout(this)
@@ -173,6 +176,7 @@ class GameBarService : Hilt_GameBarService() {
     // for client service
     fun onGameStart() {
         SystemProperties.set("sys.perf_profile", "1")
+        shouldClose = false
         rootBarView.isVisible = false
         rootBarView.alpha = 0f
         updateRootBarView()
@@ -181,6 +185,7 @@ class GameBarService : Hilt_GameBarService() {
 
     fun onGameLeave() {
         SystemProperties.set("sys.perf_profile", "0")
+        shouldClose = true
         if (::rootPanelView.isInitialized && rootPanelView.isAttachedToWindow) {
             wm.removeViewImmediate(rootPanelView)
         }
@@ -213,6 +218,7 @@ class GameBarService : Hilt_GameBarService() {
     }
 
     private fun initActions() {
+        if (shouldClose) return
         rootBarView.isVisible = true
         rootBarView.animate()
             .alpha(1f)
