@@ -19,10 +19,12 @@ android {
     }
     signingConfigs {
         platform {
-            storeFile file("platform.jks")
-            storePassword 'android'
+            storeFile file("platform.pk8")
+            storePassword ''
             keyAlias 'platform'
-            keyPassword 'android'
+            keyPassword ''
+            v1SigningEnabled true
+            v2SigningEnabled true
         }
     }
     buildTypes {

@@ -33,7 +33,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="13dp">
+            android:padding="8dp">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -55,9 +55,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="4dp"
-                    android:layout_alignParentEnd="true" 
+                    android:layout_alignParentEnd="true"
                     android:layout_toEndOf="@id/title_view"
                     android:fontFamily="@*android:string/config_lightFontFamily"
+                    android:drawableStart="@drawable/clock_time_two_outline"
+                    android:drawablePadding="2dp"
                     android:gravity="end|center_vertical"
                     android:format12Hour="h:mm"
                     android:format24Hour="kk:mm"
@@ -73,32 +75,47 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="4dp"
-                    android:layout_alignParentStart="true" 
+                    android:layout_alignParentStart="true"
+                    android:drawableStart="@drawable/battery_outline"
+                    android:drawablePadding="2dp"
                     android:gravity="start|center_vertical"
                     android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/batteryTemp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="4dp"
+                    android:drawableStart="@drawable/thermometer"
+                    android:layout_toEndOf="@+id/battery_view"
+                    android:fontFamily="@*android:string/config_lightFontFamily"
+                    android:drawablePadding="2dp"
+                    android:textSize="12sp" />
 
                 <TextClock
                     android:id="@+id/date_view"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="4dp"
-                    android:layout_alignParentEnd="true" 
+                    android:layout_alignParentEnd="true"
                     android:layout_toEndOf="@id/battery_view"
                     android:gravity="end|center_vertical"
                     android:format12Hour="EEE, d MMM"
                     android:format24Hour="EEE, d MMM"
                     android:textSize="13sp" />
+
             </RelativeLayout>
 
             <include layout="@layout/tiles" />
 
-            <io.chaldeaprjkt.gamespace.widget.MemoryView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:gravity="center"
-                android:textSize="13sp" />
-
+                <io.chaldeaprjkt.gamespace.widget.MemoryView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:drawableStart="@drawable/memory"
+                    android:drawablePadding="2dp"
+                    android:gravity="center"
+                    android:textSize="13sp" />
         </LinearLayout>
     </ScrollView>
 </androidx.cardview.widget.CardView>
