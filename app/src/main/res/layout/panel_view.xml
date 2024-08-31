@@ -33,6 +33,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:gravity="center"
             android:padding="8dp">
 
             <RelativeLayout
@@ -58,7 +59,7 @@
                     android:layout_alignParentEnd="true"
                     android:layout_toEndOf="@id/title_view"
                     android:fontFamily="@*android:string/config_lightFontFamily"
-                    android:drawableStart="@drawable/clock_time_two_outline"
+                    android:drawableEnd="@drawable/clock_time_two_outline"
                     android:drawablePadding="2dp"
                     android:gravity="end|center_vertical"
                     android:format12Hour="h:mm"
@@ -108,14 +109,24 @@
 
             <include layout="@layout/tiles" />
 
-                <io.chaldeaprjkt.gamespace.widget.MemoryView
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
-                    android:drawableStart="@drawable/memory"
-                    android:drawablePadding="2dp"
+                    android:orientation="horizontal"
                     android:gravity="center"
-                    android:textSize="13sp" />
+                    android:layout_marginStart="26dp"
+                    android:layout_marginEnd="28dp"
+                    android:background="@drawable/status_background"
+                    android:padding="8dp">
+                    
+                    <io.chaldeaprjkt.gamespace.widget.MemoryView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="4dp"
+                        android:drawableStart="@drawable/memory"
+                        android:drawablePadding="2dp"
+                        android:textSize="13sp" />
+                </LinearLayout>
         </LinearLayout>
     </ScrollView>
 </androidx.cardview.widget.CardView>
