@@ -1,6 +1,7 @@
 /*
  * Copyright (C) 2021 Chaldeaprjkt
  *               2022 crDroid Android Project
+ *               2024 The XPerience Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -141,7 +142,7 @@ class SessionService : Hilt_SessionService() {
                 // something is not right, bailing out
                 stopSelf()
             }
-            val app = commandIntent.getStringExtra(EXTRA_PACKAGE_NAME)
+            val app = commandIntent.getStringExtra(EXTRA_PACKAGE_NAME)!!
             session.register(app)
             applyGameModeConfig(app)
             gameBar.onGameStart()

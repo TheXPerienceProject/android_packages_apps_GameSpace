@@ -2,6 +2,7 @@
  * Copyright (C) 2020 The exTHmUI Open Source Project
  *               2021 AOSP-Krypton Project
  *               2022 crDroid Android Project
+ *               2024 The XPerience Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -48,7 +49,7 @@ class BatteryView @JvmOverloads constructor(
     }
 
     init {
-        val batteryManager = context.getSystemService(BatteryManager::class.java)
+        val batteryManager = context.getSystemService(BatteryManager::class.java)!!
         text = context.getString(
             R.string.battery_format,
             batteryManager.getIntProperty(BatteryManager.BATTERY_PROPERTY_CAPACITY)
