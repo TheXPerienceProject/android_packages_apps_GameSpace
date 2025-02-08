@@ -50,7 +50,7 @@
             android:summary="%s"
             android:title="@string/ringer_mode_title" />
 
-        <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+        <mx.xperience.framework.preference.SystemSettingSwitchPreference
             android:key="gamespace_suppress_fullscreen_intent"
             android:summary="@string/suppress_fullscreen_intent_summary"
             android:title="@string/suppress_fullscreen_intent_title" />
@@ -78,7 +78,7 @@
             android:key="gamespace_lock_gesture"
             android:title="@string/lock_gesture_title" />
             
-        <com.crdroid.settings.preferences.CustomSeekBarPreference
+        <mx.xperience.framework.preference.CustomSeekBarPreference
             android:key="gamespace_menu_opacity"
             android:title="@string/gamespace_menu_opacity_title"
             android:defaultValue="100"
