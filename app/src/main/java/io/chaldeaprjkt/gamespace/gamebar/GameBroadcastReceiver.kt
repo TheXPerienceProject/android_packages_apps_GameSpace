@@ -24,9 +24,10 @@ import android.os.Handler
 import android.os.Looper
 import android.os.UserHandle
 
-
 class GameBroadcastReceiver : BroadcastReceiver() {
+
     private val handler by lazy { Handler(Looper.getMainLooper()) }
+
     override fun onReceive(context: Context, intent: Intent) {
         when (intent.action) {
             GAME_START -> context.onGameStart(intent)
@@ -36,7 +37,7 @@ class GameBroadcastReceiver : BroadcastReceiver() {
 
     private fun Context.onGameStart(intent: Intent) {
         handler.post { resendBroadcast(intent) }
-        val app = intent.getStringExtra(SessionService.EXTRA_PACKAGE_NAME)
+        val app = intent.getStringExtra(SessionService.EXTRA_PACKAGE_NAME) ?: return
         SessionService.start(this, app)
     }
 

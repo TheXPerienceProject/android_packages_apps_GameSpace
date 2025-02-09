@@ -140,11 +140,14 @@ class SessionService : Hilt_SessionService() {
                 // something is not right, bailing out
                 stopSelf()
             }
+            //val app = commandIntent.getStringExtra(EXTRA_PACKAGE_NAME) ?: return
             val app = commandIntent.getStringExtra(EXTRA_PACKAGE_NAME)
-            session.register(app)
-            applyGameModeConfig(app)
-            gameBar.onGameStart()
-            screenUtils.stayAwake = appSettings.stayAwake
+            app?.let {
+                session.register(it)
+                applyGameModeConfig(it)
+                gameBar.onGameStart()
+                screenUtils.stayAwake = appSettings.stayAwake
+            }
         } catch (e: Exception) {
             Log.d(TAG, e.toString())
         }
@@ -186,7 +189,7 @@ class SessionService : Hilt_SessionService() {
         var isRunning = false
             private set
 
-        fun start(context: Context, app: String) = Intent(context, SessionService::class.java)
+        fun start(context: Context, app: String?) = Intent(context, SessionService::class.java)
             .apply {
                 action = START
                 putExtra(EXTRA_PACKAGE_NAME, app)
