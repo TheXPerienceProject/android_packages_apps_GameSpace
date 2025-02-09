@@ -1,6 +1,7 @@
 /*
  * Copyright (C) 2021 Chaldeaprjkt
  *               2022 crDroid Android Project
+ *               2024 The XPerience Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -129,19 +130,21 @@ class GameBarService : Hilt_GameBarService() {
         }
 
     // Whether to ignore the initActions (floating action) or not
-    private var shouldClose = false
+    //private var shouldClose = false
 
     override fun onCreate() {
         super.onCreate()
         val frame = FrameLayout(this)
         rootBarView = LayoutInflater.from(this)
-            .inflate(R.layout.window_util, frame, false)
-        barView = rootBarView.requireViewById(R.id.container_bar)
-        menuSwitcher = rootBarView.requireViewById(R.id.action_menu_switcher)
+            .inflate(R.layout.window_util, frame, false)!!
+        barView = rootBarView.findViewById(R.id.container_bar)!!
+        menuSwitcher = rootBarView.findViewById(R.id.action_menu_switcher)!!
     }
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
-        super.onStartCommand(intent, flags, startId)
+        if (::rootBarView.isInitialized && rootBarView.isAttachedToWindow) {
+            return START_STICKY
+        }
         when (intent?.action) {
             ACTION_STOP -> onGameLeave()
             ACTION_START -> onGameStart()
@@ -176,7 +179,7 @@ class GameBarService : Hilt_GameBarService() {
     // for client service
     fun onGameStart() {
         SystemProperties.set("sys.perf_profile", "1")
-        shouldClose = false
+        //shouldClose = false
         rootBarView.isVisible = false
         rootBarView.alpha = 0f
         updateRootBarView()
@@ -185,12 +188,16 @@ class GameBarService : Hilt_GameBarService() {
 
     fun onGameLeave() {
         SystemProperties.set("sys.perf_profile", "0")
-        shouldClose = true
-        if (::rootPanelView.isInitialized && rootPanelView.isAttachedToWindow) {
-            wm.removeViewImmediate(rootPanelView)
-        }
-        if (::rootBarView.isInitialized && rootBarView.isAttachedToWindow) {
-            wm.removeViewImmediate(rootBarView)
+        //shouldClose = true
+        try {
+            if (::rootPanelView.isInitialized && rootPanelView.isAttachedToWindow) {
+                wm.removeViewImmediate(rootPanelView)
+            }
+            if (::rootBarView.isInitialized && rootBarView.isAttachedToWindow) {
+                wm.removeViewImmediate(rootBarView)
+            }
+        } catch (e: Exception) {
+            e.printStackTrace()
         }
     }
 
@@ -218,7 +225,7 @@ class GameBarService : Hilt_GameBarService() {
     }
 
     private fun initActions() {
-        if (shouldClose) return
+        //if (shouldClose) return
         rootBarView.isVisible = true
         rootBarView.animate()
             .alpha(1f)
@@ -285,7 +292,7 @@ class GameBarService : Hilt_GameBarService() {
     private fun setupPanelView() {
         rootPanelView = LayoutInflater.from(this)
             .inflate(R.layout.window_panel, FrameLayout(this), false) as LinearLayout
-        panelView = rootPanelView.requireViewById(R.id.panel_view)
+        panelView = rootPanelView.findViewById(R.id.panel_view)!!
         panelView.alpha = appSettings.menuOpacity / 100f
         rootPanelView.setOnClickListener {
             showPanel = false
@@ -348,7 +355,7 @@ class GameBarService : Hilt_GameBarService() {
     }
 
     private fun panelButton() {
-        val actionPanel = rootBarView.requireViewById<ImageButton>(R.id.action_panel)
+        val actionPanel = rootBarView.findViewById<ImageButton>(R.id.action_panel)!!
         actionPanel.setOnClickListener {
             showPanel = !showPanel
         }
@@ -359,15 +366,15 @@ class GameBarService : Hilt_GameBarService() {
     }
 
     private fun screenshotButton() {
-        val actionScreenshot = rootBarView.requireViewById<ImageButton>(R.id.action_screenshot)
+        val actionScreenshot = rootBarView.findViewById<ImageButton>(R.id.action_screenshot)!!
         actionScreenshot.setOnClickListener {
             takeShot()
         }
     }
 
     private fun recorderButton() {
-        val actionRecorder = rootBarView.requireViewById<ImageButton>(R.id.action_record)
-        val recorder = screenUtils.recorder ?: let { actionRecorder.isVisible = false; return }
+        val actionRecorder = rootBarView.findViewById<ImageButton>(R.id.action_record)!!
+        val recorder = screenUtils.recorder ?: let { actionRecorder?.isVisible = false; return }
         recorder.addRecordingCallback(object : IRecordingCallback.Stub() {
             override fun onRecordingStart() {
                 handler.post {
