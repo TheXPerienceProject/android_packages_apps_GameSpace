@@ -216,7 +216,7 @@ class SessionService : Hilt_SessionService() {
                 action = START
                 putExtra(EXTRA_PACKAGE_NAME, app)
             }
-            .takeIf { !context.isServiceRunning(SessionService::class.java) }
+            .takeIf { !(context.isServiceRunning(SessionService::class.java)) }
             ?.run { context.startServiceAsUser(this, UserHandle.CURRENT) }
 
         fun stop(context: Context) = Intent(context, SessionService::class.java)
