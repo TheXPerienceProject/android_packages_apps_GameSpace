@@ -54,7 +54,6 @@
     <string name="gamespace_menu_opacity_title">Độ mờ của menu</string>
     <string name="adb_disabled_summary">Tạm thời vô hiệu hóa gỡ lỗi USB ADB khi ở trong trò chơi</string>
     <string name="adb_disabled_title">Vô hiệu hóa gỡ lỗi USB</string>
-    <string name="battery_format">Pin: <xliff:g id="percentage" example="100">%1$d%%</xliff:g></string>
     <!-- Tiles -->
     <!-- Notification Mode -->
 </resources>

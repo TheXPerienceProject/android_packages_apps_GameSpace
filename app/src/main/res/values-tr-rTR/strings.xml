@@ -55,8 +55,6 @@
     <string name="gamespace_menu_opacity_title">Arayüz menüsü şeffaflık seviyesi</string>
     <string name="adb_disabled_summary">Oyun sırasında USB ADB hata ayıklamasını geçici olarak devre dışı bırakın</string>
     <string name="adb_disabled_title">USB hata ayıklamasını devre dışı bırak</string>
-    <string name="battery_format">Pil: <xliff:g id="percentage" example="100">%1$d%%</xliff:g></string>
-    <string name="memory_format">Kullanılabilir bellek: <xliff:g id="availmemory" example="1000">%1$d</xliff:g>\/<xliff:g id="totalmemory" example="5000">%2$d</xliff:g> MB</string>
     <!-- Tiles -->
     <string name="notification_hide">Gizle</string>
     <string name="notification_headsup">Bildirim pencereleri</string>
@@ -66,4 +64,12 @@
     <string name="notification_mode_title">Bildirim modu</string>
     <string name="notification_mode_hide">Gösterilmesin</string>
     <string name="notification_mode_reticker">ReTicker olarak göster</string>
+    <string name="state_enabled">Etkin</string>
+    <string name="state_disabled">Devre dışı</string>
+    <string name="in_game_calls_title">Çağrı modu</string>
+    <string name="in_game_calls_no_action">Eylem yok</string>
+    <string name="in_game_calls_auto_answer">Otomatik cevaplama</string>
+    <string name="in_game_calls_auto_reject">Otomatik reddet</string>
+    <string name="in_game_calls_received_number">%1$s kullanıcısından gelen arama</string>
+    <string name="in_game_calls_rejected_number">%1$s adresinden reddedilen çağrı</string>
 </resources>
